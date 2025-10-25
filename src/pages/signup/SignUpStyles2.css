@@ -1,0 +1,573 @@
+/* Idea User Container */
+.signup-container {
+  min-height: 100vh;
+  background-color: #111111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.signup-card {
+   position: relative;
+  background-color: #1a1a1a;
+  border: 2px solid #d4af37;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 34rem;
+  box-shadow: 0 25px 50px -12px rgba(212, 175, 55, 0.25);
+  color: white;
+}
+
+.signup-title {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.signup-input,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: 1rem;
+}
+
+.signup-input:focus {
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.3);
+}
+
+.signup-button,
+.download-btn {
+  background-color: #d4af37;
+  color: black;
+  font-weight: 600;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: 0.2s;
+}
+
+.signup-button:hover,
+.download-btn:hover {
+  background-color: #b9962f;
+}
+
+label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #f5f5f5;
+}
+
+/* 📌 Small Profile Photo Upload Box */
+.profile-upload-box {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 2px dashed #bfa14a;
+  border-radius: 8px;
+  background-color: #fff; /* White background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #000;
+}
+
+.profile-upload-box:hover {
+  background-color: #f7f7f7; /* Light hover effect */
+}
+
+.upload-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #bfa14a;
+}
+
+.file-input-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* 📌 Document Upload Box */
+.upload-box {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  border: 2px dashed #bfa14a;
+  border-radius: 10px;
+  background-color: #fff; /* White background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #000;
+}
+
+.upload-box:hover {
+  background-color: #f7f7f7;
+}
+
+/* 📌 Phone Input Styling */
+.phone-input-container {
+  width: 100% !important;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.phone-input-container .react-tel-input {
+  width: 100% !important;
+}
+
+.phone-input-container .react-tel-input .form-control {
+  width: 100% !important;
+  padding: 0.8rem !important;
+  padding-left: 75px !important; /* More space after the pipe */
+  border-radius: 0.5rem !important;
+  font-size: 1rem !important;
+  color: black !important;
+  background-color: white !important;
+  border: none !important;
+  outline: none !important;
+  height: auto !important;
+}
+
+.phone-dropdown-button {
+  background-color: white !important;
+  border: none !important;
+  border-radius: 0.5rem 0 0 0.5rem !important;
+  height: 100% !important;
+  padding: 0.8rem 0.5rem !important;
+  width: 58px !important; /* Fixed width for consistent pipe positioning */
+}
+
+.phone-input-container .react-tel-input .form-control::placeholder {
+  color: #666 !important;
+}
+
+/* Remove the static pipe - now using dynamic React element */
+.phone-pipe-separator {
+  font-weight: bold;
+}
+
+.signup-input-phone {
+  width: 100% !important;
+  padding: 0.8rem !important;
+  padding-left: 75px !important; /* Match the form-control padding */
+  border-radius: 0.5rem !important;
+  font-size: 1rem !important;
+  color: black !important;
+  background-color: white !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.signup-input-phone:focus {
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.3) !important;
+}
+
+.phone-dropdown-button {
+  background-color: white !important;
+  border: none !important;
+  border-radius: 0.5rem 0 0 0.5rem !important;
+  height: 100% !important;
+  padding: 0.8rem 0.5rem !important;
+}
+
+.phone-dropdown-button:hover {
+  background-color: #f7f7f7 !important;
+}
+
+.phone-dropdown {
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid #ddd !important;
+  border-radius: 0.5rem !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+  z-index: 1000 !important;
+}
+
+.phone-dropdown .country {
+  color: black !important;
+  padding: 0.5rem !important;
+}
+
+.phone-dropdown .country:hover {
+  background-color: #f0f0f0 !important;
+}
+
+.phone-dropdown .country.highlight {
+  background-color: rgba(212, 175, 55, 0.2) !important;
+}
+
+.phone-search {
+  width: 100% !important;
+  padding: 0.5rem !important;
+  border: none !important;
+  border-bottom: 1px solid #ddd !important;
+  color: black !important;
+  background-color: white !important;
+  outline: none !important;
+}
+
+.phone-search:focus {
+  border-bottom-color: #d4af37 !important;
+}
+
+/* Golden icon styling */
+.golden-icon {
+  color: #d4af37 !important;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .signup-card {
+    padding: 1.5rem;
+    margin: 0.5rem;
+  }
+  
+  .signup-title {
+    font-size: 1.5rem;
+  }
+  
+  .phone-input-container {
+    font-size: 14px;
+  }
+}
+
+.react-tel-input .flag-dropdown {
+  border-right: 1px solid black !important; /* Black vertical line */
+}
+
+/* ✅ Dropdown Styling */
+.dropdown-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fff;
+  color: #000;
+  font-size: 1rem;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  position: relative;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24'><path fill='black' d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 20px;
+}
+
+/* ✅ Border on focus */
+.dropdown-select:focus {
+  outline: none;
+  border-color: #d4af37;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.3);
+}
+
+/* ✅ Dropdown Options */
+.dropdown-select option {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  color: #000;
+}
+
+/* Funding input container */
+.funding-input-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 0.6rem 0.8rem;
+  border: none;
+  width: 100%;
+}
+
+.funding-symbol {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: black;
+  margin-right: 8px;
+}
+
+.funding-divider {
+  width: 1px;
+  background-color: black;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.funding-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: black;
+  background: transparent;
+}
+
+.funding-input::placeholder {
+  color: #666;
+}
+
+/*  whileHover={{ scale: 1.01, boxShadow: "0 0 5px rgba(212,175,55,0.4)" }} */
+
+
+
+/* New one */
+
+/* File Preview Styles - These are ADDITIONS to existing upload-box styles */
+.file-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 15px;
+  box-sizing: border-box;
+  z-index: 2;
+  pointer-events: none; /* Allow clicks to pass through to file input */
+}
+
+.file-preview .remove-file-btn-compact {
+  pointer-events: auto; /* Enable clicks on remove button */
+}
+
+/* Preview Content Layout */
+.preview-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  gap: 8px;
+}
+
+/* Profile Photo Specific Styles */
+.profile-preview .preview-content {
+  justify-content: center;
+  gap: 12px;
+}
+
+.profile-preview-image {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e6b800;
+  box-shadow: 0 2px 4px rgba(230, 184, 0, 0.3);
+  flex-shrink: 0;
+}
+
+/* Document Preview Styles */
+.document-preview .preview-content {
+  justify-content: flex-start;
+}
+
+.file-icon-compact {
+  font-size: 22px;
+  color: #28a745;
+  flex-shrink: 0;
+}
+
+/* File Info Styles */
+.file-info {
+  flex: 1;
+  min-width: 0; /* Allow text truncation */
+  text-align: left;
+  margin: 0 8px;
+}
+
+.profile-preview .file-info {
+  text-align: center;
+  margin: 0;
+}
+
+.file-name-compact {
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 110px;
+}
+
+.file-size-compact {
+  color: #666;
+  font-size: 9px;
+  margin: 1px 0 0 0;
+  line-height: 1;
+}
+
+/* Remove Button Styles */
+.remove-file-btn-compact {
+  background: none !important;
+  border: none !important;
+  color: #dc3545 !important;
+  cursor: pointer !important;
+  font-size: 12px !important;
+  padding: 3px !important;
+  margin: 0 !important;
+  transition: all 0.2s ease !important;
+  flex-shrink: 0;
+  border-radius: 50% !important;
+  width: 20px !important;
+  height: 20px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.remove-file-btn-compact:hover {
+  color: #c82333 !important;
+  background-color: rgba(220, 53, 69, 0.1) !important;
+  transform: scale(1.1) !important;
+}
+
+/* Upload Placeholder - for centering when no file */
+.upload-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* Success state - subtle addition to existing styles */
+.upload-success {
+  border-color: #28a745 !important;
+  background-color: rgba(40, 167, 69, 0.03) !important;
+}
+
+/* File Input Overlay - ensure it still works */
+.file-input-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .file-name-compact {
+    max-width: 90px;
+    font-size: 10px;
+  }
+  
+  .file-icon-compact {
+    font-size: 18px;
+  }
+  
+  .profile-preview-image {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .remove-file-btn-compact {
+    width: 18px !important;
+    height: 18px !important;
+    font-size: 10px !important;
+  }
+}
+
+.required-asterisk {
+  color: #e74c3c;
+  margin-left: 2px;
+}
+
+
+/* New drama */
+.dropdown-container {
+  position: relative;
+}
+
+.loading-indicator {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+  color: #caa92f;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.age-error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+
+/* Back button (arrow only) */
+.back-button {
+  position: absolute;     /* keep it fixed inside card */
+  top: 1rem;            /* adjust as needed */
+  left: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  z-index: 10;            /* ensure above card */
+}
+
+.back-icon {
+  font-size: 1.5rem;
+  color: #000000;
+  transition: color 0.3s, ease;
+}
+
+.back-button:hover .back-icon {
+  color: #000000;
+ 
+}

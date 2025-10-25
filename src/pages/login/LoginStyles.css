@@ -1,0 +1,171 @@
+/* Login Page Styles */
+
+.login-container {
+  min-height: 100vh;
+  background-color: #111111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.login-card {
+  background-color: #1a1a1a;
+  border: 2px solid #d4af37;
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  width: 100%;
+  max-width: 28rem;
+  box-shadow: 0 25px 50px -12px rgba(212, 175, 55, 0.25);
+}
+
+.login-title {
+  color: white;
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.login-subtitle {
+  color: #cccccc;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.login-input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.2s ease;
+  color: #111;
+}
+
+.login-input:focus {
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.3);
+}
+
+.login-input::placeholder {
+  color: #6b7280;
+}
+
+/* 👁️ Password Input Wrapper */
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+.password-input {
+  width: 100%;
+  padding: 0.875rem 2.75rem 0.875rem 1rem; /* room for eye icon */
+  background-color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.2s ease;
+  color: #111;
+}
+
+.password-input:focus {
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.3);
+}
+
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: color 0.25s ease, transform 0.15s ease;
+}
+
+.password-toggle:hover {
+  color: #d4af37;
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* Buttons */
+.login-button {
+  width: 100%;
+  padding: 0.875rem;
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 2rem;
+}
+
+.login-button:hover {
+  background-color: #5856eb;
+}
+
+.login-divider {
+  height: 1px;
+  background-color: #374151;
+  margin: 1.5rem 0;
+  transform-origin: center;
+}
+
+.signup-text {
+  color: #9ca3af;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+
+.signup-button {
+  width: 100%;
+  padding: 0.875rem;
+  background-color: transparent;
+  color: #3b82f6;
+  border: 1px solid #3b82f6;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.signup-button:hover {
+  background-color: #3b82f6;
+  color: white;
+}
+
+/* Hover transitions for a softer gold accent feel */
+.login-button:active,
+.signup-button:active {
+  transform: scale(0.97);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 640px) {
+  .login-card {
+    padding: 2rem 1.5rem;
+    margin: 1rem;
+  }
+
+  .login-title {
+    font-size: 2rem;
+  }
+}

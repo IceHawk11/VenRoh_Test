@@ -1,0 +1,32 @@
+/* Bubble Animation */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Floating Bubbles */
+.bubble {
+  position: absolute;
+  bottom: -50px; /* Start below the viewport */
+  background: rgba(255, 200, 50, 0.3);
+  border-radius: 50%;
+  animation-name: floatUp;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Bubble Movement Keyframes */
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-50vh) scale(1.2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-110vh) scale(0.8);
+    opacity: 0;
+  }
+}
