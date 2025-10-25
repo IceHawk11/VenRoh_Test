@@ -5,7 +5,7 @@ import { axiosInstance } from "../lib/axios";
 import ProfileHeader from "../components/ProfileHeader";
 import AboutSection from "../components/AboutSection";
 import toast from "react-hot-toast";
-import IdVerificationSection from "../components/IdVerificationSection";
+//import IdVerificationSection from "../components/IdVerificationSection";
 import AgeSection from "../components/AgeSection";
 import StartUpName from "../components/StartUpName";
 import StartUpDescription from "../components/StartUpDescription";
