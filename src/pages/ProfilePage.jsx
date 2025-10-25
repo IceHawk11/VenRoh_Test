@@ -8,7 +8,7 @@ import ExperienceSection from "../components/ExperienceSection";
 import EducationSection from "../components/EducationSection";
 import SkillsSection from "../components/SkillsSection";
 import toast from "react-hot-toast";
-import IdVerificationSection from "../components/idVerificationSection";
+import IdVerificationSection from "../components/IdVerificationSection";
 import AgeSection from "../non-updatable-components/AgeSection";
 import StartUpName from "../components/StartUpName";
 import Description from "../non-updatable-components/Description";
